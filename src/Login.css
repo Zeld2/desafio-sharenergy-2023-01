@@ -1,0 +1,11 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.remember {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
