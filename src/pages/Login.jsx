@@ -54,6 +54,7 @@ export default function Login({ setToken }) {
       localStorage.setItem('username', JSON.stringify(username))
     } else {
       localStorage.removeItem('username')
+      localStorage.removeItem('password')
     }
   }
 
