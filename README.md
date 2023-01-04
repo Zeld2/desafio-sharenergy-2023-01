@@ -1,5 +1,9 @@
 # Desafio para o processo seletivo SHARENERGY 2023/01
 
+## Vídeo demonstrativo
+- Link: https://youtu.be/CcmF9FmkI9k
+O vídeo tem um pouco mais de 5 minutos, pois tentei demonstrar tanto a aplicação em si, quanto seu código. Caso seja demasiado longo, recomendo o acompanhamento do início do vídeo onde desmontro a página web da aplicação.
+
 ## Instrução de uso
 
 1. Depois de clonar o repositório, é necessário instalar suas dependências:
