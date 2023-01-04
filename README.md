@@ -60,6 +60,9 @@ Algumas coisas ficaram de fora desse projeto. Exemplo:
 
 Demonstração:
 
-[![Funcionalidades do sitezim](https://www.youtube.com/watch?v=U9HYVzoLd9k/default.jpg)](https://www.youtube.com/watch?v=U9HYVzoLd9k)
+[![Funcionalidades do sitezim](https://i.ytimg.com/vi/U9HYVzoLd9k/hqdefault.jpg)](https://www.youtube.com/watch?v=U9HYVzoLd9k)
 
 
+## Vídeo explicando o sisteminha
+
+- Ainda preciso gravar.
