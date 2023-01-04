@@ -3,17 +3,17 @@
 ## Instrução de uso
 
 1. Depois de clonar o repositório, é necessário instalar suas dependências:
--npm i
+- npm i
 
 2. Crie o container do banco (MongoDB) em docker através do arquivo docker-compose.yml disponibilizado:
-docker-compose -d
+- docker-compose -d
 
 3. Inicie a api(backend):
-npm run build-api
-npm run start-api
+- npm run build-api
+- npm run start-api
 
 4. E, enfim o frontend:
-npm run start
+- npm run start
 
 # O Desafio
 
