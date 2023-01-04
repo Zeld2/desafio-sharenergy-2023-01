@@ -54,6 +54,8 @@ Algumas coisas ficaram de fora desse projeto. Exemplo:
 
 - Pode ter um monte de erros e coisas esquisitas espalhadas pelo código que eu deixei passar.
 
+- Testes.
+
 ## Vídeo
 
 Vou gravar ainda.

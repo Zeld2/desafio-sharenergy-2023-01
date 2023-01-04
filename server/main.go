@@ -36,10 +36,8 @@ func main() {
 	var dbPort        = ambiente("MONGO_PORT", "27017")
 
 	log.Printf("Tentando conectar ao mongo %s:%s", dbHost, dbPort)
-
 	var mongoURI = fmt.Sprintf("mongodb://%s:%s@%s:%s",dbUsuario,dbSenha,dbHost, dbPort)
 
-	
 	// Mongo
 	mongoClient, err := mongo.NewClient(options.Client().ApplyURI(mongoURI))
 	if err != nil{
@@ -65,10 +63,6 @@ func main() {
 
 	appFiber.Use(autenticacao.Autenticador)
 	appFiber.Use(cors.New())
-	//appFiber.Use(reescritor.Reescritor("./public"))
-	// isso aqui serve pra rescrever caminhos como /login pra /index.html , já que
-	// toda a lógica das rotas do frontend acontece só do lado do cliente.
-	// appFiber.Use(reescritor.Reescritor)
 
 	// Registrar os serviços
 	// o "autenticação" não usa o banco de dados, os argumentos estão aqui
