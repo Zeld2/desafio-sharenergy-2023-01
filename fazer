@@ -1,0 +1,11 @@
+#!/bin/bash
+rm -r ui/dist
+
+cd ui
+npm install
+npm run build
+cd ..
+
+docker build --tag server-sharenergy .
+
+docker compose build

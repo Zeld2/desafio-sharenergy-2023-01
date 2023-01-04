@@ -1,0 +1,27 @@
+version: “3.8”
+services:
+ mongo:
+   container_name: mongo_db
+   image: mongo:4.4
+   volumes:
+    - /volume-sharenergy-ruy
+   environment:
+    - MONGO_INITDB_ROOT_USERNAME=root
+    - MONGO_INITDB_ROOT_PASSWORD=q   
+   ports:
+    - 27017:27017
+   command: mongod
+ server:
+  environment:
+   - MONGO_HOST=mongo_db
+   - MONGO_PORT=27017
+   - MONGO_DB=desafio-shareenergy-ruy
+   - MONGO_USER=root
+   - MONGO_PASS=q
+  build:
+   context: .
+   dockerfile: Dockerfile
+  ports:
+   - 3000:3000
+  depends_on:
+   - mongo
