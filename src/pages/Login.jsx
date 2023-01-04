@@ -35,7 +35,7 @@ function getLocalStorageOrNullUsername(key, defaultValue) {
 
 export default function Login({ setToken }) {
   const [username, setUserName] = useState(getLocalStorageOrNullUsername('username', ''));
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState(getLocalStorageOrNullUsername('password', ''));
   const [unauthorized, setUnauthorized] = useState(true)
   const [remember, setRemember] = useState(username ? true : false)
 
@@ -79,8 +79,9 @@ export default function Login({ setToken }) {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" isInvalid={!unauthorized} onChange={e => {
+              <Form.Control type="password" placeholder="Password" isInvalid={!unauthorized} value={password} onChange={e => {
                 setPassword(e.target.value)
+                if (remember) localStorage.setItem('password', JSON.stringify(e.target.value))
               }} />
               <Form.Control.Feedback type="invalid">
                 Wrong user or/and password

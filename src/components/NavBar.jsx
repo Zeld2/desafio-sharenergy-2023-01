@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import { useNavigate } from 'react-router-dom';
 
 function Tabs() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
   return (
     <Nav variant="tabs" defaultActiveKey="/" onSelect={(selectedKey) => navigate(`${selectedKey}`)}>
       <Nav.Item>
@@ -14,6 +14,11 @@ function Tabs() {
       <Nav.Item>
         <Nav.Link eventKey="/dogs">
           Random Dogs
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="/customers">
+          Customers
         </Nav.Link>
       </Nav.Item>
     </Nav>

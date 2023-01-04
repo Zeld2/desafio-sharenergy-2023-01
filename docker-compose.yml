@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: mongoDB
+    image: mongo:latest
+    restart: always
+    volumes:
+      - ./customers:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE= Customers
+    ports:
+      - 27017:27017

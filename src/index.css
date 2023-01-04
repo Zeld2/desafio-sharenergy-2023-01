@@ -20,6 +20,24 @@ code {
   text-overflow: ellipsis
 }
 
+.table-customer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.button-save {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.th-save {
+  position: relative;
+}
+
+
 .dogs {
   display: flex;
   flex-wrap: wrap;

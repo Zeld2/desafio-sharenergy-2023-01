@@ -11,8 +11,10 @@ const getRandomDogImg = async () => {
 export default function Dogs() {
     const [dogImage, setdogImage] = useState();
 
-    useEffect(async () => {
-        setdogImage(await getRandomDogImg())
+    useEffect(() => {
+        getRandomDogImg().then((img) => {
+            setdogImage(img)
+        })
     },[])
 
     const handleSubmit = async e => {
@@ -23,12 +25,12 @@ export default function Dogs() {
 
     return (
         <div className="login-wrapper">
-            <Card style={{ minWidth: '40rem'}}>
-                <Card.Body fluid> 
+            <Card style={{ minWidth: '40rem' }}>
+                <Card.Body fluid>
                     <Card.Title> Random Dogs
                     </Card.Title>
                     <Form onSubmit={handleSubmit}>
-                        <Card.Img variant="bottom"  style={{ maxHeight: '40rem'}} src={dogImage} />
+                        <Card.Img variant="bottom" style={{ maxHeight: '40rem' }} src={dogImage} />
                         <Form.Group className="section-center-dogs">
                             <Button variant="primary" type='submit' className='dogs'>Refresh</Button>{' '}
                         </Form.Group>

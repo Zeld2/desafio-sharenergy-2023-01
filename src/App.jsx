@@ -9,6 +9,7 @@ import Users from "./pages/User";
 import Tabs from "./components/NavBar";
 import Cats from "./pages/Cats";
 import Dogs from "./pages/Dogs";
+import Customers from "./pages/Customers";
 
 export default function App() {
   const { token, setToken } = useToken();
@@ -27,6 +28,7 @@ export default function App() {
         <Route exact path="/" element={<Users />} />
         <Route exact path="/cats" element={<Cats />} />
         <Route exact path="/dogs" element={<Dogs />} />
+        <Route exact path="/customers" element={<Customers />} />
       </Routes>
     </div>
   )
