@@ -6,7 +6,7 @@
 - npm i
 
 2. Crie o container do banco (MongoDB) em docker através do arquivo docker-compose.yml disponibilizado:
-- docker-compose -d
+- docker-compose up -d
 
 3. Inicie a api(backend):
 - npm run build-api
