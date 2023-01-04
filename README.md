@@ -65,4 +65,4 @@ Demonstração:
 
 ## Vídeo explicando o sisteminha
 
-- Ainda preciso gravar.
+[![Explicação](https://i.ytimg.com/vi/s4e7s7NsFRc/hqdefault.jpg)](https://www.youtube.com/watch?v=s4e7s7NsFRc)
