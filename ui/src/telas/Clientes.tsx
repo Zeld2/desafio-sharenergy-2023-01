@@ -63,7 +63,7 @@ export default function Clientes(){
         if(estado.clienteAExcluir===undefined)
             return;
         let x = await api.clientes.apagarCliente(estado.clienteAExcluir.id!)
-        console.log(x)
+        console.log("Fazer alguma coisa com a resposta:" +JSON.stringify(x))
         // invalida a lista de clientes pra forçar o componente a pegá-la de novo
         // (já que ela vai ter sido alterada no servidor)
         setEstado({...estado, clienteAExcluir: undefined, listaDeClientes: undefined})
@@ -95,7 +95,6 @@ export default function Clientes(){
 
 
     function ListagemClientes():JSX.Element{
-        console.log(estado.listaDeClientes)
         return(
                 <TableContainer mr={3} ml={3}>
                     <Table variant="simple" size="md" >

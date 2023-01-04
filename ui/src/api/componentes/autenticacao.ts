@@ -69,7 +69,7 @@ export const autenticacao = {
                 return resposta.json()
             }).then( (dados:RespostaLogin) =>{
                 if(dados.err){
-                    console.log(dados.err)
+                    console.log("Erro: " +dados.err)
                 }
                 if(dados.tok){
                     resolve(true)

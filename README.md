@@ -58,4 +58,8 @@ Algumas coisas ficaram de fora desse projeto. Exemplo:
 
 ## Vídeo
 
-Vou gravar ainda.
+Demonstração:
+
+[![Funcionalidades do sitezim](https://www.youtube.com/watch?v=U9HYVzoLd9k/default.jpg)](https://www.youtube.com/watch?v=U9HYVzoLd9k)
+
+
